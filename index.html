@@ -1,0 +1,1066 @@
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160778">
+<meta name="description" content="S.R Design Jhenaidah">
+<title>S.R Design | Jhenaidah</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#160778;
+  --navy2:#10045d;
+  --orange:#ff7900;
+  --pink:#ec1687;
+  --cyan:#79dce9;
+  --white:#fff;
+  --muted:#d9d5ff;
+  --card:#21118b;
+}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+  margin:0;
+  background:var(--navy);
+  color:white;
+  font-family:'Hind Siliguri',sans-serif;
+}
+
+a {color:inherit;text-decoration:none}
+
+.wrap {
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar {
+  background:#0e0457;
+  border-bottom:1px solid #ffffff20;
+  font-family:Inter,'Hind Siliguri',sans-serif;
+  font-size:13px;
+}
+
+.topbar .wrap {
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:center;
+  padding:10px 0;
+  flex-wrap:wrap;
+}
+
+.topbar a:hover {color:var(--cyan)}
+
+/* HEADER */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#160778ee;
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #ffffff1c;
+}
+
+.nav {
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-family:Inter,sans-serif;
+  font-weight:900;
+  letter-spacing:-1px;
+  font-size:21px;
+}
+
+.brand img {
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  background:white;
+  border-radius:12px;
+  padding:4px;
+  box-shadow:0 5px 18px #0003;
+}
+
+.brand span {color:var(--orange)}
+
+.navlinks {
+  display:flex;
+  align-items:center;
+  gap:24px;
+  font-weight:600;
+}
+
+.navlinks a {color:#f2efff}
+.navlinks a:hover {color:var(--orange)}
+
+.menu {
+  display:none;
+  background:transparent;
+  border:1px solid #ffffff50;
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* BUTTONS */
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 22px;
+  border-radius:10px;
+  background:var(--orange);
+  color:#19085b;
+  font-weight:700;
+  transition:.2s;
+  border:0;
+  cursor:pointer;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+  filter:brightness(1.08);
+}
+
+/* HERO SECTION */
+
+.hero {
+  padding:55px 0 65px;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 10% 10%,#4533b0 0,transparent 35%),
+    linear-gradient(135deg,var(--navy),#1b0788 65%,#10045d);
+}
+
+.hero-copy {
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+.eyebrow {
+  display:inline-block;
+  border:1px solid #ffffff3d;
+  background:#ffffff0d;
+  padding:8px 17px;
+  border-radius:999px;
+  color:#f4d7ff;
+  font-size:15px;
+  margin-bottom:17px;
+}
+
+.hero h1 {
+  font-family:Inter,'Hind Siliguri',sans-serif;
+  font-size:clamp(36px,5vw,65px);
+  line-height:1.2;
+  margin:0 0 18px;
+  letter-spacing:-1.5px;
+}
+
+.hero h1 span {color:var(--orange)}
+
+.hero p {
+  max-width:900px;
+  margin:0 auto 25px;
+  font-size:clamp(17px,2vw,21px);
+  line-height:1.9;
+  color:#f0edff;
+}
+
+.hero-actions {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:35px;
+}
+
+/* BANNER BELOW HERO TEXT */
+
+.hero-banner {
+  width:100%;
+  max-width:1050px;
+  margin:25px auto 0;
+  padding:9px;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 25px 65px #05002e80;
+  overflow:hidden;
+}
+
+.hero-banner img {
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+/* QUICK INFORMATION */
+
+.quick-info {
+  margin-top:-24px;
+  position:relative;
+  z-index:2;
+}
+
+.info-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.info-card {
+  background:white;
+  color:#21105f;
+  border-radius:14px;
+  padding:19px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  box-shadow:0 12px 28px #07003a40;
+}
+
+.info-icon {
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#fff0df;
+  font-size:22px;
+  flex-shrink:0;
+}
+
+.info-card small {
+  display:block;
+  color:#6e6891;
+}
+
+.info-card strong {
+  font-family:Inter,'Hind Siliguri',sans-serif;
+  font-size:14px;
+  overflow-wrap:anywhere;
+}
+
+/* COMMON SECTION */
+
+section {padding:78px 0}
+
+.section-head {
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 38px;
+}
+
+.kicker {
+  color:var(--orange);
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.section-head h2 {
+  font-size:clamp(30px,4vw,43px);
+  margin:8px 0 12px;
+  line-height:1.25;
+}
+
+.section-head p {
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.7;
+  margin:0;
+}
+
+/* SERVICES */
+
+.services {background:#10045d}
+
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+}
+
+.service {
+  padding:25px 20px;
+  border:1px solid #ffffff20;
+  background:linear-gradient(145deg,#25158e,#1a0a72);
+  border-radius:16px;
+  transition:.22s;
+}
+
+.service:hover {
+  transform:translateY(-5px);
+  border-color:#ff7900aa;
+  box-shadow:0 16px 35px #08003c70;
+}
+
+.service .symbol {
+  width:52px;
+  height:52px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:#ff79001c;
+  color:var(--orange);
+  font-size:27px;
+  margin-bottom:17px;
+}
+
+.service h3 {
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.service p {
+  color:#d1ccff;
+  line-height:1.6;
+  margin:0;
+  font-size:15px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {background:#10045d}
+
+.demo-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  align-items:start;
+}
+
+.demo-card {
+  overflow:hidden;
+  border-radius:12px;
+  background:transparent;
+  border:1px solid #ffffff18;
+}
+
+.demo-card a {
+  display:block;
+}
+
+.demo-card img {
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  display:block;
+  border-radius:12px;
+  transition:transform .25s;
+}
+
+.demo-card a:hover img {
+  transform:scale(1.025);
+}
+
+/* CONTACT */
+
+.contact {
+  background:linear-gradient(135deg,#11045f,#20108a);
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:26px;
+  max-width:850px;
+  margin:auto;
+}
+
+.contact-panel {
+  background:#ffffff0b;
+  border:1px solid #ffffff20;
+  border-radius:18px;
+  padding:28px;
+}
+
+.contact-panel h3 {
+  font-size:25px;
+  margin:0 0 20px;
+}
+
+.contact-item {
+  display:flex;
+  gap:14px;
+  margin:20px 0;
+  align-items:flex-start;
+}
+
+.contact-item .symbol {
+  font-size:22px;
+  color:var(--orange);
+}
+
+.contact-item small {
+  display:block;
+  color:#c9c3ff;
+}
+
+.contact-item strong {
+  font-size:17px;
+  overflow-wrap:anywhere;
+}
+
+/* FOOTER */
+
+footer {
+  background:#0a0345;
+  padding:25px 0;
+  color:#c9c3ff;
+}
+
+.footer-row {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.footer-row strong {
+  font-family:Inter,sans-serif;
+  color:white;
+}
+
+.footer-row strong span {color:var(--orange)}
+
+.social {
+  display:flex;
+  gap:15px;
+}
+
+.social a:hover {color:var(--orange)}
+
+/* TABLET */
+
+@media(max-width:900px) {
+
+  .service-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .info-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .quick-info {margin-top:0;padding-top:16px}
+
+  .demo-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:650px) {
+
+  .topbar .wrap {
+    justify-content:center;
+    text-align:center;
+  }
+
+  .nav {min-height:68px}
+
+  .brand {font-size:17px;gap:8px}
+
+  .brand img {
+    width:48px;
+    height:48px;
+  }
+
+  .menu {display:block}
+
+  .navlinks {
+    display:none;
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    background:#10045d;
+    padding:20px 5%;
+    flex-direction:column;
+    align-items:stretch;
+    gap:16px;
+    border-bottom:1px solid #ffffff25;
+  }
+
+  .navlinks.open {display:flex}
+
+  .hero {padding:40px 0}
+
+  .hero h1 {
+    font-size:clamp(32px,8vw,43px);
+    letter-spacing:-1px;
+  }
+
+  .hero p {
+    font-size:16px;
+    line-height:1.85;
+  }
+
+  .hero-banner {
+    padding:5px;
+    border-radius:12px;
+    margin-top:20px;
+  }
+
+  .hero-banner img {border-radius:8px}
+
+  .service-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .service {padding:18px 14px}
+
+  .service h3 {font-size:18px}
+
+  .service p {font-size:14px}
+
+  .service .symbol {
+    width:44px;
+    height:44px;
+    font-size:23px;
+  }
+
+  .demo-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .info-grid {grid-template-columns:1fr}
+
+  .section-head {margin-bottom:28px}
+
+  section {padding:56px 0}
+
+  .contact-panel {padding:20px}
+
+  .footer-row {
+    justify-content:center;
+    text-align:center;
+  }
+
+  .info-card {padding:15px}
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:380px) {
+
+  .service-grid,
+  .demo-grid {
+    grid-template-columns:1fr;
+  }
+
+  .hero-actions .btn {width:100%}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+  <div class="wrap">
+    <span></span>
+    <span>
+      ✉
+      <a href="mailto:s.rdesignjhenaidah@gmail.com">
+        s.rdesignjhenaidah@gmail.com
+      </a>
+      &nbsp; | &nbsp;
+      ☎
+      <a href="tel:+8801302528186">01302-528186</a>
+    </span>
+  </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+  <div class="wrap nav">
+
+    <a class="brand" href="#home">
+      <img
+        src="https://thumbs4.imgbox.com/e6/9f/vx5fFYcK_t.jpeg"
+        alt="S.R Design Logo"
+      >
+      <span>S.R DESIGN JHENAIDAH</span>
+    </a>
+
+    <button
+      class="menu"
+      id="menuBtn"
+      aria-label="মেনু খুলুন"
+      aria-expanded="false"
+    >☰</button>
+
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">হোম</a>
+      <a href="#services">আমাদের সার্ভিস</a>
+      <a href="#portfolio">ডেমো ডিজাইন</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+  <div class="wrap">
+
+    <div class="hero-copy">
+
+      <span class="eyebrow">
+        ✦ আপনার ডিজাইন, আমাদের সৃজনশীলতা
+      </span>
+
+      <h1>
+        আপনার ভাবনাকে দিন
+        <span>সুন্দর ডিজাইনের</span> রূপ
+      </h1>
+
+      <p>
+        S.R Design-এ পাবেন সাইনবোর্ড, ব্যানার,
+        স্টিকার, পোস্টার, ভিজিটিং কার্ডসহ সকল ধরনের
+        ডিজাইন সার্ভিস। আপনার প্রয়োজন অনুযায়ী
+        মানসম্মত ডিজাইন তৈরি করি।
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#contact">
+          ডিজাইন অর্ডার করুন ↗
+        </a>
+      </div>
+
+    </div>
+
+    <!-- BANNER UNDER THE TEXT -->
+
+    <div class="hero-banner">
+      <img
+        src="https://thumbs4.imgbox.com/85/0f/BfnEdnMu_t.jpeg"
+        alt="S.R Design Banner"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+<!-- QUICK INFORMATION -->
+
+<div class="quick-info">
+  <div class="wrap info-grid">
+
+    <a class="info-card" href="tel:+8801302528186">
+      <div class="info-icon">☎</div>
+      <div>
+        <small>ফোন করুন</small>
+        <strong>01302-528186</strong>
+      </div>
+    </a>
+
+    <a class="info-card" href="mailto:s.rdesignjhenaidah@gmail.com">
+      <div class="info-icon">✉</div>
+      <div>
+        <small>ইমেইল করুন</small>
+        <strong>s.rdesignjhenaidah@gmail.com</strong>
+      </div>
+    </a>
+
+    <a
+      class="info-card"
+      href="https://wa.me/8801302528186"
+      target="_blank"
+      rel="noopener"
+    >
+      <div class="info-icon">◉</div>
+      <div>
+        <small>হোয়াটসঅ্যাপ করুন</small>
+        <strong>01302-528186</strong>
+      </div>
+    </a>
+
+    <div class="info-card">
+      <div class="info-icon">✎</div>
+      <div>
+        <small>আমাদের ঠিকানা</small>
+        <strong>ঝিনাইদহ, বাংলাদেশ</strong>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <span class="kicker">আমাদের সার্ভিস</span>
+      <h2>আপনার সব ডিজাইন, এক জায়গায়</h2>
+      <p>
+        ব্যক্তিগত, ব্যবসায়িক কিংবা প্রচারণার কাজে
+        প্রয়োজনীয় ডিজাইন সার্ভিস যত্নসহকারে তৈরি করা হয়।
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service">
+        <div class="symbol">▣</div>
+        <h3>সাইনবোর্ড</h3>
+        <p>দোকান, প্রতিষ্ঠান ও ব্যবসার জন্য আকর্ষণীয় সাইনবোর্ড ডিজাইন।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">▤</div>
+        <h3>ব্যানার</h3>
+        <p>অনুষ্ঠান, প্রচারণা ও ব্যবসার জন্য নজরকাড়া ব্যানার।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">✂</div>
+        <h3>স্টিকার</h3>
+        <p>প্রোডাক্ট, দোকান ও ব্যক্তিগত ব্যবহারের স্টিকার ডিজাইন।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">▧</div>
+        <h3>ফেস্টুন</h3>
+        <p>প্রচার, অনুষ্ঠান ও বিভিন্ন আয়োজনের ফেস্টুন ডিজাইন।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">▣</div>
+        <h3>নির্বাচনী পোস্টার</h3>
+        <p>প্রচারণার জন্য তথ্যসমৃদ্ধ ও দৃষ্টিনন্দন পোস্টার।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">▤</div>
+        <h3>ভিজিটিং কার্ড</h3>
+        <p>আপনার পরিচয় ও ব্যবসাকে তুলে ধরতে পেশাদার কার্ড।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">▦</div>
+        <h3>প্ল্যান ও লেআউট</h3>
+        <p>আপনার প্রয়োজন অনুযায়ী পরিচ্ছন্ন ও গোছানো ডিজাইন।</p>
+      </article>
+
+      <article class="service">
+        <div class="symbol">✦</div>
+        <h3>অন্যান্য ডিজাইন</h3>
+        <p>আপনার আইডিয়া জানান—প্রয়োজন অনুযায়ী ডিজাইন তৈরি করা হবে।</p>
+      </article>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- PORTFOLIO / DEMO GALLERY -->
+
+<section class="portfolio" id="portfolio">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <span class="kicker">আমাদের কাজের নমুনা</span>
+      <h2>ডেমো ডিজাইন গ্যালারি</h2>
+      <p>
+        আমাদের ডিজাইনের নমুনা দেখুন।
+        প্রতিটি ছবিতে ক্লিক করলে নির্ধারিত লিংক খুলবে।
+      </p>
+    </div>
+
+    <div class="demo-grid" id="demoGrid"></div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="wrap">
+
+    <div class="section-head">
+      <span class="kicker">যোগাযোগ করুন</span>
+      <h2>ডিজাইন অর্ডার করতে যোগাযোগ করুন</h2>
+      <p>
+        আপনার প্রয়োজনীয় ডিজাইনের জন্য
+        ফোন বা ইমেইলে যোগাযোগ করুন।
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-panel">
+
+        <h3>যোগাযোগের তথ্য</h3>
+
+        <div class="contact-item">
+          <span class="symbol">☎</span>
+          <div>
+            <small>মোবাইল</small>
+            <strong>
+              <a href="tel:+8801302528186">01302-528186</a>
+            </strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="symbol">✉</span>
+          <div>
+            <small>ইমেইল</small>
+            <strong>
+              <a href="mailto:s.rdesignjhenaidah@gmail.com">
+                s.rdesignjhenaidah@gmail.com
+              </a>
+            </strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="symbol">◉</span>
+          <div>
+            <small>হোয়াটসঅ্যাপ</small>
+            <strong>
+              <a
+                href="https://wa.me/8801302528186"
+                target="_blank"
+                rel="noopener"
+              >01302-528186</a>
+            </strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="symbol">⌖</span>
+          <div>
+            <small>অবস্থান</small>
+            <strong>ঝিনাইদহ, বাংলাদেশ</strong>
+          </div>
+        </div>
+
+        <a
+          class="btn"
+          href="mailto:s.rdesignjhenaidah@gmail.com?subject=S.R%20Design%20-%20Design%20Order"
+        >
+          ডিজাইন অর্ডার করুন ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="wrap footer-row">
+
+    <strong><span>S.R</span> DESIGN</strong>
+
+    <span>
+      © <span id="year"></span>
+      S.R Design, Jhenaidah. সর্বস্বত্ব সংরক্ষিত।
+    </span>
+
+    <div class="social">
+      <a href="mailto:s.rdesignjhenaidah@gmail.com">ইমেইল</a>
+      <a href="tel:+8801302528186">কল করুন</a>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+/* MOBILE MENU */
+
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+
+  const open = navLinks.classList.toggle('open');
+
+  menuBtn.setAttribute('aria-expanded', String(open));
+
+  menuBtn.textContent = open ? '✕' : '☰';
+
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+
+  a.addEventListener('click', () => {
+
+    navLinks.classList.remove('open');
+
+    menuBtn.setAttribute('aria-expanded', 'false');
+
+    menuBtn.textContent = '☰';
+
+  });
+
+});
+
+/* CURRENT YEAR */
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+
+/* DEMO GALLERY
+
+   image = ছবির লিংক
+   link  = ছবিতে ক্লিক করলে যে ওয়েবসাইট খুলবে
+
+   নতুন ছবি যোগ করতে নিচের তালিকায় নতুন লাইন যোগ করুন।
+
+*/
+
+const demos = [
+
+  {
+    name:'সাইনবোর্ড ডিজাইন',
+    image:'https://thumbs4.imgbox.com/94/ae/iCjhEUo3_t.jpeg',
+    link:'ওয়েবসাইটের_লিংক_১'
+  },
+
+  {
+    name:'ব্যানার ডিজাইন',
+    image:'https://thumbs4.imgbox.com/f2/ef/fApmZwe6_t.jpeg',
+    link:'ওয়েবসাইটের_লিংক_২'
+  },
+
+  {
+    name:'ভিজিটিং কার্ড',
+    image:'https://thumbs4.imgbox.com/8a/69/2NK4vvvf_t.jpeg',
+    link:'ওয়েবসাইটের_লিংক_৩'
+  },
+
+  {
+    name:'স্টিকার ডিজাইন',
+    image:'ছবির_লিংক_৪',
+    link:'ওয়েবসাইটের_লিংক_৪'
+  },
+
+  {
+    name:'ফেস্টুন ডিজাইন',
+    image:'ছবির_লিংক_৫',
+    link:'ওয়েবসাইটের_লিংক_৫'
+  },
+
+  {
+    name:'পোস্টার ডিজাইন',
+    image:'ছবির_লিংক_৬',
+    link:'ওয়েবসাইটের_লিংক_৬'
+  }
+
+];
+
+
+/* SHOW DEMO IMAGES */
+
+const demoGrid = document.getElementById('demoGrid');
+
+demos.forEach(item => {
+
+  // ছবির লিংক না থাকলে দেখাবে না
+
+  const valid =
+    item.image &&
+    !item.image.startsWith('ছবির_লিংক_');
+
+  if (!valid) return;
+
+  const card = document.createElement('article');
+
+  card.className = 'demo-card';
+
+  const anchor = document.createElement('a');
+
+  const linkValid =
+    item.link &&
+    !item.link.startsWith('ওয়েবসাইটের_লিংক_');
+
+  anchor.href = linkValid ? item.link : item.image;
+
+  anchor.target = '_blank';
+
+  anchor.rel = 'noopener';
+
+  anchor.setAttribute('aria-label', item.name);
+
+  const img = document.createElement('img');
+
+  img.src = item.image;
+
+  img.alt = item.name;
+
+  img.loading = 'lazy';
+
+  anchor.appendChild(img);
+
+  card.appendChild(anchor);
+
+  demoGrid.appendChild(card);
+
+});
+
+</script>
+
+</body>
+</html>
+```
